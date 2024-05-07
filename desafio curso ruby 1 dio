@@ -1,0 +1,20 @@
+
+puts "Digite seu nome: "
+
+nome = gets.chomp
+
+
+
+puts "Digite seu sobrenome: "
+
+sobreNome = gets.chomp
+
+
+
+puts "Digite sua Idade: "
+
+idade = gets.chomp.to_i
+
+
+
+puts "seu nome é #{nome} #{sobreNome} e sua idade é de #{idade} anos"
