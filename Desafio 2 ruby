@@ -1,0 +1,45 @@
+# criar uma calculadora
+
+loop do
+  puts "=======Calculadora========="
+  puts "Selecione a opção de 1 a 4 e 0 se desejar sair"
+  puts "1- soma"
+  puts "2- subtração"
+  puts "3- multiplicação"
+  puts "4- divisão"
+  puts "0- sair"
+  print "Digite a opção: "
+  opcao = gets.chomp.to_i
+    if opcao == 0 || opcao < 0 || opcao > 4
+        break
+        end
+        case
+          when opcao == 1
+            print "Digita o primeiro numero: "
+            num1 = gets.chomp.to_i
+            print "Digita o Segundo numero: "
+            num2 = gets.chomp.to_i
+            puts "a soma do entre #{num1} e #{num2} é: #{num1 + num2}"
+
+          when opcao == 2
+            print "Digita o primeiro numero: "
+            num1 = gets.chomp.to_i
+            print "Digita o Segundo numero: "
+            num2 = gets.chomp.to_i
+            puts "a soma do entre #{num1} e #{num2} é: #{num1 - num2}"
+
+          when opcao == 3
+            print "Digita o primeiro numero: "
+            num1 = gets.chomp.to_i
+            print "Digita o Segundo numero: "
+            num2 = gets.chomp.to_i
+            puts "a soma do entre #{num1} e #{num2} é: #{num1 * num2}"
+
+          when opcao == 4
+            print "Digita o primeiro numero: "
+            num1 = gets.chomp.to_i
+            print "Digita o Segundo numero: "
+            num2 = gets.chomp.to_i
+            puts "a soma do entre #{num1} e #{num2} é: #{num1 / num2}"
+        end
+end
